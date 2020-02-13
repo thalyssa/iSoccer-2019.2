@@ -1,6 +1,6 @@
-import personInterface
+from view import View
 
-class EmployeeManagment:
+class EmployeeManagmentView(View):
     def prompt(self):
         pass
 

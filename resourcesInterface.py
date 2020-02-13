@@ -8,6 +8,6 @@ class ResourcesInterface(ABC):
     def addResource(self):
         pass
 
+    @abstractmethod
     def available(self, isAvailable: bool):
-        self.isAvailable = isAvailable
-        #TODO: ESCREVER A INFORMAÇÃO NO JSON
+        pass

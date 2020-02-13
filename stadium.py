@@ -19,4 +19,11 @@ class Stadium(resourcesInterface):
         self.qtdToilets = int(input('\nDigite também a quantidade de banheiros: '))
         self.qtdBars = int(input('\nPor último, a quantidade de lanchonetes: '))
 
+        stadium_data = {
+            'Nome': self.stadiumName,
+            'Lugares': self.qtdSeats,
+            'Banheiros': self.qtdToilets,
+            'Lanchonetes': self.qtdBars
+        }
+
         #TODO - ESCREVER OS DADOS NUM JSON

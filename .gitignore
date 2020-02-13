@@ -1,5 +1,7 @@
 .idea/
 __pycache__/
 resources.json
+employees.json
+fan_partners.json
 Pipfile
 Pipfile.lock
