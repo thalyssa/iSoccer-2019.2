@@ -6,7 +6,7 @@
 
 ## Padrões implementados
 
-### Abstract Factory
+### Factory Method
 
 ##### No cadastro de recursos
 
