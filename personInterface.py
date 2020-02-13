@@ -2,7 +2,6 @@ from abc import ABC, abstractmethod
 
 
 class PersonInterface(ABC):
-
     name: str
     email: str
     cpf: str
@@ -10,4 +9,8 @@ class PersonInterface(ABC):
 
     @abstractmethod
     def register(self):
+        pass
+
+    @abstractmethod
+    def writeOnFile(self):
         pass

@@ -1,6 +1,7 @@
 from view import View
 from loggedView import LoggedView
 
+
 class InitView(View):
     def prompt(self):
         print("Bem vindo ao iSoccer!\nPor favor, escolha uma opção: ")

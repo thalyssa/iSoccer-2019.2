@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
-class ResourcesInterface(ABC):
 
+class ResourcesInterface(ABC):
     isAvailable: bool
 
     @abstractmethod
@@ -10,4 +10,8 @@ class ResourcesInterface(ABC):
 
     @abstractmethod
     def available(self, isAvailable: bool):
+        pass
+
+    @abstractmethod
+    def writeOnFile(self):
         pass

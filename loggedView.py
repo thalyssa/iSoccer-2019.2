@@ -1,9 +1,10 @@
 from view import View
 from employeeManagmentView import EmployeeManagmentView
 
+
 class LoggedView(View):
     def prompt(self):
-        print('iSoccer')
+        print('\niSoccer')
         print('PAINEL PRINCIPAL')
         print('Escolha sua opção:')
         print('1 - Gerenciamento de funcionários')
@@ -26,4 +27,4 @@ class LoggedView(View):
         elif option == '4':
             pass
         elif option == '5':
-            pass
+            self.back()
