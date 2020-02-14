@@ -1,11 +1,12 @@
 from personInterface import PersonInterface
-from main import role, state
 import json
 
 
 class EmployeeConcrete(PersonInterface):
     salary: str
     employee_role: str
+
+    
 
     def register(self):
 
@@ -34,13 +35,13 @@ class EmployeeConcrete(PersonInterface):
 
     def writeOnFile(self):
 
-        with open(state.employees_json_path, 'r') as file:
-            employee_info = json.load(file)
+        '''with open(state.employees_json_path, 'r') as file:
+            employee_info = json.load(file)'''
 
         employee_data = {'Nome': self.name, 'E-mail': self.email, 'CPF': self.cpf, 'Salário': self.salary, 'Telefone': self.phone}
 
-        var = employee_info[self.employee_role].append(employee_data)
+        '''var = employee_info[self.employee_role].append(employee_data)
 
         with open(state.employees_json_path, 'w') as file:
-            json.dump(var, file)
+            json.dump(var, file)'''
 

@@ -20,6 +20,7 @@ class LoggedView(View):
         if option == '1':
             v = EmployeeManagmentView(self.state)
             self.switch_view(v)
+            #print('foi')
         elif option == '2':
             pass
         elif option == '3':

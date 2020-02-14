@@ -1,4 +1,4 @@
-from employees.employeeConcrete import EmployeeConcrete
+from employeeConcrete import EmployeeConcrete
 
 
 class PlayerConcrete(EmployeeConcrete):

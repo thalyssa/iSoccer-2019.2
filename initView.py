@@ -8,6 +8,7 @@ class InitView(View):
         print("1 - Login")
         print("2 - Sair")
 
+
         option = input("\n")
         return option
 

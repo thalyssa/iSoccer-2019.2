@@ -13,6 +13,7 @@
 ##### No cadastro de funcionários
 
 
-### Strategy
+### Singleton
 
-##### Na geração de relatórios
+##### Na manutenção do estado do programa
+Classes: stateMetaclass e state

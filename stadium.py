@@ -1,6 +1,6 @@
-import resourcesInterface
+from resourcesInterface import ResourcesInterface
 
-class Stadium(resourcesInterface):
+class Stadium(ResourcesInterface):
 
     def __init__(self):
         self.isAvailable = True

@@ -3,5 +3,6 @@ __pycache__/
 resources.json
 employees.json
 fan_partners.json
+roles.json
 Pipfile
 Pipfile.lock

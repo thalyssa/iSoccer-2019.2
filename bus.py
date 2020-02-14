@@ -1,6 +1,6 @@
-import resourcesInterface
+from resourcesInterface import ResourcesInterface
 
-class Bus(resourcesInterface):
+class Bus(ResourcesInterface):
 
     licensePlate: str
     qtdSeats: int

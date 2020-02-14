@@ -1,5 +1,5 @@
 from view import View
-from employees.employeeFactory import EmployeeFactory
+from employeeFactory import EmployeeFactory
 
 
 class EmployeeManagmentView(View):
@@ -17,6 +17,7 @@ class EmployeeManagmentView(View):
     def run(self, option):
         if option == '1':
             self.e.prompt()
+            # print('Tela de gerenciamento de funcionários foi')
         elif option == '2':
             pass
         elif option == '3':

@@ -8,8 +8,16 @@ state = state.State()
 APP_PATH = os.getcwd()
 state.app_path = APP_PATH
 
-role = {'1': 'Presidente', '2': 'Médico', '3': 'Técnico', '4': 'Preparadores Físicos', '5': 'Motoristas',
+ROLES_JSON_PATH = os.path.join(APP_PATH, 'roles.json')
+state.roles_json_path = ROLES_JSON_PATH
+
+if not os.path.isfile(ROLES_JSON_PATH):
+    roles = {'1': 'Presidente', '2': 'Médico', '3': 'Técnico', '4': 'Preparadores Físicos', '5': 'Motoristas',
         '6': 'Cozinheiros', '7': 'Advogados', '8': 'Jogador'}
+
+    with open(state.roles_json_path, 'w') as file:
+        json.dump(roles, file)
+
 
 # Definição do caminho e criação do arquivo para registrar os funcionários
 EMPLOYEES_JSON_PATH = os.path.join(APP_PATH, 'employees.json')
