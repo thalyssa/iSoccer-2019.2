@@ -1,10 +1,10 @@
-from employeeConcrete import EmployeeConcrete
+from employees.employeeConcrete import EmployeeConcrete
+import state
 
 
 class EmployeeFactory(EmployeeConcrete):
-
-    factory_role: str
-    #e = EmployeeConcrete()
+    s = state.State()
+    e = EmployeeConcrete(s)
 
     def prompt(self):
         print('Primeiramente defina o cargo do funcionário a ser cadastrado: ')
@@ -22,7 +22,6 @@ class EmployeeFactory(EmployeeConcrete):
 
     def run(self, option):
         if int(option) in range(1, 9):
-            pass
-            #self.e.defineRole(option)
+            self.e.defineRole(option)
         else:
             print('Opção inválida')

@@ -1,5 +1,6 @@
 from view import View
-from employeeManagmentView import EmployeeManagmentView
+from employees.employeeManagmentView import EmployeeManagmentView
+from partner.partnerManagmentView import PartnerManagmentView
 
 
 class LoggedView(View):
@@ -20,9 +21,9 @@ class LoggedView(View):
         if option == '1':
             v = EmployeeManagmentView(self.state)
             self.switch_view(v)
-            #print('foi')
         elif option == '2':
-            pass
+            v = PartnerManagmentView(self.state)
+            self.switch_view(v)
         elif option == '3':
             pass
         elif option == '4':

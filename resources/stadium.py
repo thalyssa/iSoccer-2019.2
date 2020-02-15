@@ -1,4 +1,4 @@
-from resourcesInterface import ResourcesInterface
+from resources.resourcesInterface import ResourcesInterface
 
 class Stadium(ResourcesInterface):
 

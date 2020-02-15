@@ -11,6 +11,5 @@ class PersonInterface(ABC):
     def register(self):
         pass
 
-    @abstractmethod
     def writeOnFile(self):
         pass

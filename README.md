@@ -8,9 +8,8 @@
 
 ### Factory Method
 
-##### No cadastro de recursos
-
 ##### No cadastro de funcionários
+Classes: employeeManagmentView, employeeFactory, employeeConcrete
 
 
 ### Singleton
